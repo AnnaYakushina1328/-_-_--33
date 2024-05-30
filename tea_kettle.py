@@ -5,30 +5,30 @@ class TeaKettle:
 
     def fill_with_water(self, faucet):
         if not self.is_empty:
-            print("Tea kettle is already filled with water.")
+            print("Чайник уже наполнен водой.")
             return
-        print("Filling tea kettle with water from faucet...")
+        print("Наполнение чайника водой из-под крана...")
         self.is_empty = False
 
     def put_on_stove(self, stove):
         if self.is_on_stove:
-            print("Tea kettle is already on the stove.")
+            print("Чайник уже стоит на плите.")
             return
-        print("Putting tea kettle on the stove...")
+        print("Ставлю чайник на плиту...")
         self.is_on_stove = True
 
     def light_gas(self, matches):
         if not self.is_on_stove:
-            print("Tea kettle is not on the stove. Cannot light gas.")
+            print("На плите нет чайника. Не удается зажечь газ.")
             return
-        print("Lighting gas with matches...")
-        print("Waiting for tea kettle to boil...")
+        print("Зажигание газа спичками...")
+        print("Ждем, пока закипит чайник...")
 
     def pour_out_water(self):
         if self.is_empty:
-            print("Tea kettle is already empty.")
+            print("Чайник уже пуст.")
             return
-        print("Pouring out water from tea kettle...")
+        print("Выливание воды из чайника...")
         self.is_empty = True
 
 class Faucet:
