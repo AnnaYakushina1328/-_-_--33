@@ -1,3 +1,5 @@
+#функции высших порядков
+
 import math
 
 class Rational:
